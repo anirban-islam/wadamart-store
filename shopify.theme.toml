@@ -1,0 +1,5 @@
+[environments.store]
+store = "wadamart-store"
+store-password = "3365"
+theme="wadamart-store/main"
+theme-editor-sync = true
