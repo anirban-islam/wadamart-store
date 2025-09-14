@@ -1,0 +1,18 @@
+{
+    "current": {
+        "theme": {
+            "name": "Wadamart Store",
+            "version": "1.0.0"
+        },
+        "settings": {
+            "color_primary": "#1a73e8",
+            "color_secondary": "#ffffff",
+            "font_family": "Roboto, Arial, sans-serif",
+            "show_announcement_bar": true,
+            "announcement_text": "Welcome to Wadamart Store!",
+            "currency": "USD",
+            "enable_newsletter": true,
+            "newsletter_placeholder": "Enter your email"
+        }
+    }
+}
