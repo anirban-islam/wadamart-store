@@ -15,6 +15,7 @@
     {% if template.name=='product' %}{{ product.handle }} {% endif %}
     {% if template.name=='collection' %}{{ collection.handle }} {% endif %}">
 
+    {% sections 'header-group' %}
     <main>
         {{ content_for_layout }}
     </main>
