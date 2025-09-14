@@ -11,7 +11,7 @@
     {{ 'output.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
 </head>
-<body id="{{ page_title | handlaize}}">
+<body id="{{ page_title | handleize}}">
     {{ content_for_layout }}
 
     <script src="{{ 'jquery.js' | asset_url }}"></script>
