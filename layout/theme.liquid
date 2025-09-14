@@ -14,7 +14,11 @@
   <body id="{{ page_title | handleize}}" class="{{ template  }} 
     {% if template.name=='product' %}{{ product.handle }} {% endif %}
     {% if template.name=='collection' %}{{ collection.handle }} {% endif %}">
-    {{ content_for_layout }}
+
+    <main>
+        {{ content_for_layout }}
+    </main>
+    
 
     <script src="{{ 'jquery.js' | asset_url }}"></script>
     {{ content_for_footer }}
