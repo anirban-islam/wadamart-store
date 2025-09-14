@@ -8,6 +8,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <title>{{ page_title }}</title>
     {{ 'style.css' || | asset_url ||| stylesheet_tag }}
+    {{ 'output.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
 </head>
 <body>
