@@ -219,6 +219,9 @@
   .inset-0 {
     inset: calc(var(--spacing) * 0);
   }
+  .top-0 {
+    top: calc(var(--spacing) * 0);
+  }
   .top-\[-1\.25rem\] {
     top: -1.25rem;
   }
@@ -257,6 +260,9 @@
   }
   .left-\[auto\] {
     left: auto;
+  }
+  .left-full {
+    left: 100%;
   }
   .z-10 {
     z-index: 10;
@@ -374,6 +380,9 @@
   }
   .ml-1 {
     margin-left: calc(var(--spacing) * 1);
+  }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
   }
   .ml-\[\.625rem\] {
     margin-left: .625rem;
