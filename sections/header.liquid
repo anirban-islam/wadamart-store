@@ -306,7 +306,7 @@
               </ul>
             </div>
 
-            <div class="bb-dropdown-menu flex max-[61.9375rem]:hidden">
+            {% comment %} <div class="bb-dropdown-menu flex max-[61.9375rem]:hidden">
               <div class="inner-select w-[11.25rem] bg-[#fff] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] flex items-center">
                 <svg
                   class="svg-icon m-[.625rem] w-[1.5625rem] h-[1.5625rem] align-middle"
@@ -331,439 +331,441 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> {% endcomment %}
   {% comment %} <div class="bb-mobile-menu-overlay hidden w-full h-screen fixed top-[0] left-[0] bg-[#000000cc] z-[16]"></div> {% endcomment %}
-  {% comment %} <div
-    id="bb-mobile-menu"
-    class="bb-mobile-menu transition-all duration-[0.3s] ease-in-out w-[21.25rem] h-full pt-[.9375rem] px-[1.25rem] pb-[1.25rem] fixed top-[0] right-[auto] left-[0] bg-[#fff] translate-x-[-100%] flex flex-col z-[17] overflow-auto max-[30rem]:w-[18.75rem]"
-  > {% endcomment %}
-    <div class="bb-menu-title w-full pb-[.625rem] flex flex-wrap justify-between">
-      <span class="menu_title font-Poppins flex items-center text-[1rem] text-[#3d4750] font-semibold leading-[1.625rem] tracking-[.32px]"
-        >My Menu</span
-      >
-      <button
-        type="button"
-        class="bb-close-menu relative border-[0] text-[1.875rem] leading-[1] text-[#ff0000] bg-transparent"
-      >
-        ×
-      </button>
-    </div>
-    {% comment %}
-      <div class="bb-menu-inner">
-        <div class="bb-menu-content">
-          <ul>
-            <li class="relative">
-              <a
-                href="index.html"
-                class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
-                >Home</a
-              >
-            </li>
-            <li class="relative">
-              <a
-                href="javascript:void(0)"
-                class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
-                >Categories</a
-              >
-              <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >Classic</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="shop-left-sidebar-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Left sidebar 3 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-left-sidebar-col-4.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Left sidebar 4 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-right-sidebar-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Right sidebar 3 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-right-sidebar-col-4.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Right sidebar 4 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-full-width.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Full width 4 column</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >Banner</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="shop-banner-left-sidebar-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Left sidebar 3 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-banner-left-sidebar-col-4.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Left sidebar 4 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-banner-right-sidebar-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Right sidebar 3 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-banner-right-sidebar-col-4.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Right sidebar 4 column</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-banner-full-width.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Full width 4 column</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >Columns</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="shop-full-width-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >3 Columns full width</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-full-width-col-4.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >4 Columns full width</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-full-width-col-5.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >5 Columns full width</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-full-width-col-6.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >6 Columns full width</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-banner-full-width-col-3.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Banner 3 Columns</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >List</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="shop-list-left-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Shop left sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-list-right-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Shop right sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-list-banner-left-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Banner left sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-list-banner-right-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Banner right sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="shop-list-full-col-2.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Full width 2 columns</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a
-                href="javascript:void(0)"
-                class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
-                >Products</a
-              >
-              <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >Product page</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="product-left-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Product left sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="product-right-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >Product right sidebar</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <a
-                    href="javascript:void(0)"
-                    class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
-                    >Product Accordion</a
-                  >
-                  <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                    <li class="relative">
-                      <a
-                        href="product-accordion-left-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >left sidebar</a
-                      >
-                    </li>
-                    <li class="relative">
-                      <a
-                        href="product-accordion-right-sidebar.html"
-                        class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                        >right sidebar</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-                <li class="relative">
-                  <a
-                    href="product-full-width.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Product full width</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="product-accordion-full-width.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >accordion full width</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a
-                href="javascript:void(0)"
-                class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
-                >Pages</a
-              >
-              <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                <li class="relative">
-                  <a
-                    href="about-us.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >About Us</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="contact-us.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Contact Us</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="cart.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Cart</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="checkout.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Checkout</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="compare.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Compare</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="faq.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Faq</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="login.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Login</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="register.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Register</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li class="relative">
-              <a
-                href="javascript:void(0)"
-                class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
-                >Blog</a
-              >
-              <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
-                <li class="relative">
-                  <a
-                    href="blog-left-sidebar.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Left Sidebar</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="blog-right-sidebar.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Right Sidebar</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="blog.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Full Width</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="blog-detail.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Detail Left Sidebar</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="blog-detail-right-sidebar.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Detail Right Sidebar</a
-                  >
-                </li>
-                <li class="relative">
-                  <a
-                    href="blog-detail-full-width.html"
-                    class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
-                    >Detail Full Width</a
-                  >
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div class="header-res-lan-curr">
-          <!-- Social Start -->
-          <div class="header-res-social mt-[1.875rem]">
-            <div class="header-top-social">
-              <ul class="flex flex-row justify-center mb-[0]">
-                <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
-                  <a href="#" class="transition-all duration-[0.3s] ease-in-out"
-                    ><i class="ri-facebook-fill text-[#fff] text-[.9375rem]"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
-                  <a href="#" class="transition-all duration-[0.3s] ease-in-out"
-                    ><i class="ri-twitter-fill text-[#fff] text-[.9375rem]"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
-                  <a href="#" class="transition-all duration-[0.3s] ease-in-out"
-                    ><i class="ri-instagram-line text-[#fff] text-[.9375rem]"></i
-                  ></a>
-                </li>
-                <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem]">
-                  <a href="#" class="transition-all duration-[0.3s] ease-in-out"
-                    ><i class="ri-linkedin-fill text-[#fff] text-[.9375rem]"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <!-- Social End -->
-        </div>
-      </div>
-    {% endcomment %}
+  {% comment %}
+    <div
+      id="bb-mobile-menu"
+      class="bb-mobile-menu transition-all duration-[0.3s] ease-in-out w-[21.25rem] h-full pt-[.9375rem] px-[1.25rem] pb-[1.25rem] fixed top-[0] right-[auto] left-[0] bg-[#fff] translate-x-[-100%] flex flex-col z-[17] overflow-auto max-[30rem]:w-[18.75rem]"
+    >
+  {% endcomment %}
+  <div class="bb-menu-title w-full pb-[.625rem] flex flex-wrap justify-between">
+    <span class="menu_title font-Poppins flex items-center text-[1rem] text-[#3d4750] font-semibold leading-[1.625rem] tracking-[.32px]"
+      >My Menu</span
+    >
+    <button
+      type="button"
+      class="bb-close-menu relative border-[0] text-[1.875rem] leading-[1] text-[#ff0000] bg-transparent"
+    >
+      ×
+    </button>
   </div>
+  {% comment %}
+    <div class="bb-menu-inner">
+      <div class="bb-menu-content">
+        <ul>
+          <li class="relative">
+            <a
+              href="index.html"
+              class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
+              >Home</a
+            >
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:void(0)"
+              class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
+              >Categories</a
+            >
+            <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >Classic</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="shop-left-sidebar-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Left sidebar 3 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-left-sidebar-col-4.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Left sidebar 4 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-right-sidebar-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Right sidebar 3 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-right-sidebar-col-4.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Right sidebar 4 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-full-width.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Full width 4 column</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >Banner</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="shop-banner-left-sidebar-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Left sidebar 3 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-banner-left-sidebar-col-4.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Left sidebar 4 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-banner-right-sidebar-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Right sidebar 3 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-banner-right-sidebar-col-4.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Right sidebar 4 column</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-banner-full-width.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Full width 4 column</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >Columns</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="shop-full-width-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >3 Columns full width</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-full-width-col-4.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >4 Columns full width</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-full-width-col-5.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >5 Columns full width</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-full-width-col-6.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >6 Columns full width</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-banner-full-width-col-3.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Banner 3 Columns</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >List</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="shop-list-left-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Shop left sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-list-right-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Shop right sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-list-banner-left-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Banner left sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-list-banner-right-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Banner right sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="shop-list-full-col-2.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Full width 2 columns</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:void(0)"
+              class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
+              >Products</a
+            >
+            <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >Product page</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="product-left-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Product left sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="product-right-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >Product right sidebar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  href="javascript:void(0)"
+                  class="transition-all duration-[0.3s] ease-in-out mb-[0] pl-[.9375rem] pr-[0] py-[.75rem] capitalize block text-[.875rem] font-normal text-[#686e7d]"
+                  >Product Accordion</a
+                >
+                <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+                  <li class="relative">
+                    <a
+                      href="product-accordion-left-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >left sidebar</a
+                    >
+                  </li>
+                  <li class="relative">
+                    <a
+                      href="product-accordion-right-sidebar.html"
+                      class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[1.875rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                      >right sidebar</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="relative">
+                <a
+                  href="product-full-width.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Product full width</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="product-accordion-full-width.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >accordion full width</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:void(0)"
+              class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
+              >Pages</a
+            >
+            <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+              <li class="relative">
+                <a
+                  href="about-us.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >About Us</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="contact-us.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="cart.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Cart</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="checkout.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Checkout</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="compare.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Compare</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="faq.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Faq</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="login.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Login</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="register.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Register</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="relative">
+            <a
+              href="javascript:void(0)"
+              class="transition-all duration-[0.3s] ease-in-out mb-[.75rem] p-[.75rem] block font-Poppins capitalize text-[#686e7d] border-[.0625rem] border-solid border-[#eee] rounded-[.625rem] text-[.9375rem] font-medium leading-[1.75rem] tracking-[.48px]"
+              >Blog</a
+            >
+            <ul class="sub-menu w-full min-w-[auto] p-[0] mb-[.625rem] static hidden visible opacity-[1]">
+              <li class="relative">
+                <a
+                  href="blog-left-sidebar.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Left Sidebar</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="blog-right-sidebar.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Right Sidebar</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="blog.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Full Width</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="blog-detail.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Detail Left Sidebar</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="blog-detail-right-sidebar.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Detail Right Sidebar</a
+                >
+              </li>
+              <li class="relative">
+                <a
+                  href="blog-detail-full-width.html"
+                  class="font-Poppins leading-[1.75rem] tracking-[.48px] transition-all duration-[0.3s] ease-in-out font-normal pl-[.75rem] text-[.875rem] text-[#777] mb-[0] capitalize block py-[.75rem]"
+                  >Detail Full Width</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="header-res-lan-curr">
+        <!-- Social Start -->
+        <div class="header-res-social mt-[1.875rem]">
+          <div class="header-top-social">
+            <ul class="flex flex-row justify-center mb-[0]">
+              <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
+                <a href="#" class="transition-all duration-[0.3s] ease-in-out"
+                  ><i class="ri-facebook-fill text-[#fff] text-[.9375rem]"></i
+                ></a>
+              </li>
+              <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
+                <a href="#" class="transition-all duration-[0.3s] ease-in-out"
+                  ><i class="ri-twitter-fill text-[#fff] text-[.9375rem]"></i
+                ></a>
+              </li>
+              <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem] mr-[8px]">
+                <a href="#" class="transition-all duration-[0.3s] ease-in-out"
+                  ><i class="ri-instagram-line text-[#fff] text-[.9375rem]"></i
+                ></a>
+              </li>
+              <li class="list-inline-item w-[1.875rem] h-[1.875rem] flex items-center justify-center bg-[#3d4750] rounded-[.625rem]">
+                <a href="#" class="transition-all duration-[0.3s] ease-in-out"
+                  ><i class="ri-linkedin-fill text-[#fff] text-[.9375rem]"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Social End -->
+      </div>
+    </div>
+  {% endcomment %}
+  {% comment %} </div> {% endcomment %}
 </header>
 
 {% schema %}
