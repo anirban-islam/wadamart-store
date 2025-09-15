@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "logo_image": "shopify://shop_images/logo.png",
     "theme": {
       "name": "Wadamart Store",
       "version": "1.0.0"
@@ -22,6 +23,13 @@
       "currency": "USD",
       "enable_newsletter": true,
       "newsletter_placeholder": "Enter your email"
-    }
+    },
+    "sections": {
+      "banner": {
+        "type": "banner",
+        "settings": {}
+      }
+    },
+    "content_for_index": []
   }
 }
