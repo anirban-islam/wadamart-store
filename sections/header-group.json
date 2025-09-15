@@ -12,7 +12,7 @@
     "type": "header",
     "name": "Header",
     "sections":{
-        "header": {
+        "menu-header": {
             "type": "menu-header",
             "settings": {}
         },
@@ -25,5 +25,5 @@
             "settings": {}
         }
     },
-    "order": ["announcement-bar" ,"logo-header" ,"header" ]
+    "order": ["announcement-bar" ,"logo-header" ,"menu-header" ]
 }
