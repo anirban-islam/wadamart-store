@@ -221,20 +221,22 @@
                   <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
                     {% if link.links != blank %}
                       <div class="relative group">
-                        <button
-                          type="button"
-                          class="flex items-center gap-x-1 text-[.9375rem] font-medium text-[#3d4750] hover:text-[#6c7fd8] transition-all duration-200"
-                        >
-                          {{ link.title }}
-                          <svg
-                            viewBox="0 0 20 20"
-                            fill="currentColor"
-                            aria-hidden="true"
-                            class="w-4 h-4 ml-1 text-[#6c7fd8] transition-transform duration-200 group-hover:rotate-180"
+                        <a href="{{ link.url }}">
+                          <button
+                            type="button"
+                            class="flex items-center gap-x-1 text-[.9375rem] font-medium text-[#3d4750] hover:text-[#6c7fd8] transition-all duration-200"
                           >
-                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
-                          </svg>
-                        </button>
+                            {{ link.title }}
+                            <svg
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                              aria-hidden="true"
+                              class="w-4 h-4 ml-1 text-[#6c7fd8] transition-transform duration-200 group-hover:rotate-180"
+                            >
+                              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+                            </svg>
+                          </button>
+                        </a>
                         <div
                           class="absolute left-0 top-full mt-3 min-w-[16rem] bg-white border border-[#eee] rounded-[.625rem] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                         >
