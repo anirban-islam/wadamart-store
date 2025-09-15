@@ -14,6 +14,8 @@
                       alt="logo"
                       class="light w-[7.8125rem] max-[61.9375rem]:w-[7.1875rem] block"
                     >
+                  {% else %}
+                    <h2>{{ shop.name }}</h2>
                   {% endif %}
                   <img
                     src="assets/logo-dark.png"
