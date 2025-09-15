@@ -18,8 +18,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "menu": "header-menu",
-        "logo_image": "shopify://shop_images/logo.png"
+        "menu": "header-menu"
       }
     }
   },
