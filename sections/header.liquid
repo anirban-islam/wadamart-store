@@ -215,11 +215,10 @@
               id="navbarSupportedContent"
             >
               <ul class="navbar-nav flex flex-wrap flex-row ">
-                <li class="nav-item flex items-center font-Poppins text-[.9375rem] text-[#686e7d] font-light leading-[1.75rem] tracking-[.48px] mr-[2.1875rem]">
-                  {% for link in linklists['header-menu'].links %}
-                    {{ link.title }}
-                  {% endfor %}
-                </li>
+                {% for link in linklists['header-menu'].links %}
+                  {{ link.title }}
+                {% endfor %}
+
                 <li class="nav-item bb-main-dropdown flex items-center mr-[2.8125rem]">
                   <a
                     class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
