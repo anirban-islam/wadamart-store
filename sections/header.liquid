@@ -218,9 +218,9 @@
             >
               <ul class="navbar-nav flex flex-wrap flex-row ">
                 {% for link in linklists['header-menu'].links %}
-                  <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem] group hover:bb-dropdown-open">
+                  <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
                     {% if link.links != blank %}
-                      <div class="relative group hover:bb-dropdown-open">
+                      <div class="relative group">
                         <a href="{{ link.url }}">
                           <button
                             type="button"
@@ -242,25 +242,26 @@
                         >
                           <ul class="py-2">
                             {% for child_link in link.links %}
-                              <li class="relative group hover:bb-dropdown-open">
+                              <li class="relative group">
                                 {% if child_link.links != blank %}
-                                  <div class="submenu-parent group hover:bb-dropdown-open">
+                                  <div class="submenu-parent">
                                     <a
                                       href="{{ child_link.url }}"
                                       class="px-5 font-semibold py-3 text-[#3d4750] hover:text-[#6c7fd8] hover:bg-[#f7f8fa] font-Poppins text-[.9375rem] transition-all duration-150 flex items-center justify-between"
+                                      onclick="event.preventDefault(); this.nextElementSibling.classList.toggle('submenu-open');"
                                     >
                                       {{ child_link.title }}
                                       <svg
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                         aria-hidden="true"
-                                        class="w-4 h-4 ml-2 text-[#6c7fd8] transition-transform duration-200 group-hover:rotate-180"
+                                        class="w-4 h-4 ml-2 text-[#6c7fd8] transition-transform duration-200"
                                       >
                                         <path fill-rule="evenodd" d="M8.22 5.22a.75.75 0 0 1 1.06 0l3.72 3.72-3.72 3.72a.75.75 0 1 1-1.06-1.06l2.19-2.19-2.19-2.19a.75.75 0 0 1 0-1.06z" clip-rule="evenodd" />
                                       </svg>
                                     </a>
                                     <div
-                                      class="absolute left-full top-0 ml-2 min-w-[16rem] bg-white border border-[#eee] rounded-[.625rem] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
+                                      class="absolute left-full top-0 ml-2 min-w-[16rem] bg-white border border-[#eee] rounded-[.625rem] shadow-lg opacity-0 invisible transition-all duration-200 z-50 submenu"
                                     >
                                       <ul class="py-2">
                                         {% for grandchild_link in child_link.links %}
@@ -276,6 +277,40 @@
                                       </ul>
                                     </div>
                                   </div>
+                                  <style>
+                                    .submenu {
+                                      opacity: 0;
+                                      visibility: hidden;
+                                      pointer-events: none;
+                                    }
+                                    .submenu-open {
+                                      opacity: 1 !important;
+                                      visibility: visible !important;
+                                      pointer-events: auto !important;
+                                    }
+                                  </style>
+                                  <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                      document.querySelectorAll('.submenu-parent > a').forEach(function (trigger) {
+                                        trigger.addEventListener('click', function (e) {
+                                          e.preventDefault();
+                                          var submenu = this.nextElementSibling;
+                                          submenu.classList.toggle('submenu-open');
+                                        });
+                                      });
+                                      // Optional: close submenu when clicking outside
+                                      document.addEventListener('click', function (e) {
+                                        document.querySelectorAll('.submenu').forEach(function (menu) {
+                                          if (
+                                            !menu.contains(e.target) &&
+                                            !menu.previousElementSibling.contains(e.target)
+                                          ) {
+                                            menu.classList.remove('submenu-open');
+                                          }
+                                        });
+                                      });
+                                    });
+                                  </script>
                                 {% else %}
                                   <a
                                     href="{{ child_link.url }}"
@@ -289,7 +324,7 @@
                           </ul>
                         </div>
                       </div>
-                    {% else %}
+                    {%- else -%}
                       <a
                         class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium{% if link.active %} text-[#6c7fd8] font-bold{% endif %} text-[#3d4750] block tracking-[.48px]"
                         href="{{ link.url }}"
