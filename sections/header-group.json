@@ -7,21 +7,15 @@
  * made to this file may be overwritten.
  * ------------------------------------------------------------
  */
+
 {
-  "type": "header",
-  "name": "Header",
-  "sections": {
-    "header": {
-      "type": "header",
-      "settings": {
-        "announcement_text": "Free Shipping on Orders Over $500",
-        "announcement_bar_link": "http://127.0.0.1:9292/",
-        "announcement_bg_color": "#e91111",
-        "announcement_text_color": "#ed0d0d"
-      }
-    }
-  },
-  "order": [
-    "header"
-  ]
+    "type": "header",
+    "name": "Header",
+    "sections":{
+        "header": {
+            "type": "header",
+            "settings": {}
+        }
+    },
+    "order": ["header"]
 }
