@@ -220,55 +220,37 @@
                 {% for link in linklists['header-menu'].links %}
                   <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
                     {% if link.links != blank %}
-                      <div class="relative">
+                      <div class="relative group">
                         <button
-                          popovertarget="desktop-menu-product"
-                          class="flex items-center gap-x-1 text-sm/6 font-semibold text-black hover:text-gray-900 group"
+                          type="button"
+                          class="flex items-center gap-x-1 text-[.9375rem] font-medium text-[#3d4750] hover:text-[#6c7fd8] transition-all duration-200"
                         >
-                         {{ link.title }}
+                          {{ link.title }}
                           <svg
                             viewBox="0 0 20 20"
                             fill="currentColor"
-                            data-slot="icon"
                             aria-hidden="true"
-                            class="size-5 flex-none text-gray-500"
+                            class="w-4 h-4 ml-1 text-[#6c7fd8] transition-transform duration-200 group-hover:rotate-180"
                           >
-                            <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
                           </svg>
                         </button>
-
-                        <el-popover
-                          id="desktop-menu-product"
-                          anchor="bottom"
-                          popover
-                          class="w-screen max-w-md overflow-hidden rounded-3xl bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(3)] backdrop:bg-transparent open:block data-closed:translate-y-1 data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in"
+                        <div
+                          class="absolute left-0 top-full mt-3 min-w-[16rem] bg-white border border-[#eee] rounded-[.625rem] shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50"
                         >
-                          <div class="p-4">
-                            <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-white/5">
-                              <div class="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-700/50 group-hover:bg-gray-700">
-                                <svg
-                                  viewBox="0 0 24 24"
-                                  fill="none"
-                                  stroke="currentColor"
-                                  stroke-width="1.5"
-                                  data-slot="icon"
-                                  aria-hidden="true"
-                                  class="size-6 text-gray-400 group-hover:text-white"
+                          <ul class="py-2">
+                            {% for child_link in link.links %}
+                              <li>
+                                <a
+                                  href="{{ child_link.url }}"
+                                  class="block px-5 py-3 text-[#3d4750] hover:text-[#6c7fd8] hover:bg-[#f7f8fa] font-Poppins text-[.9375rem] transition-all duration-150"
                                 >
-                                  <path d="M10.5 6a7.5 7.5 0 1 0 7.5 7.5h-7.5V6Z" stroke-linecap="round" stroke-linejoin="round" />
-                                  <path d="M13.5 10.5H21A7.5 7.5 0 0 0 13.5 3v7.5Z" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                              </div>
-                              <div class="flex-auto">
-                                <a href="#" class="block font-semibold text-white">
-                                  Analytics
-                                  <span class="absolute inset-0"></span>
+                                  {{ child_link.title }}
                                 </a>
-                                <p class="mt-1 text-gray-400">Get a better understanding of your traffic</p>
-                              </div>
-                            </div>
-
-                        </el-popover>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        </div>
                       </div>
                     {%- else -%}
                       <a
