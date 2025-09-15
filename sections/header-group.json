@@ -17,7 +17,7 @@
         "announcement_text": "Free Shipping on Orders Over $500",
         "announcement_bar_link": "http://127.0.0.1:9292/",
         "announcement_bg_color": "#e91111",
-        "announcement_text_color": "#966767"
+        "announcement_text_color": "#ff2020"
       }
     }
   },
