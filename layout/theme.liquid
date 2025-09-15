@@ -11,16 +11,19 @@
     {{ 'output.css' | asset_url | stylesheet_tag }}
     {{ content_for_header }}
   </head>
-  <body id="{{ page_title | handleize}}" class="{{ template  }} 
-    {% if template.name=='product' %}{{ product.handle }} {% endif %}
-    {% if template.name=='collection' %}{{ collection.handle }} {% endif %}">
-
+  <body
+    id="{{ page_title | handleize}}"
+    class="
+      {{ template  }}
+      {% if template.name=='product' %}{{ product.handle }} {% endif %}
+      {% if template.name=='collection' %}{{ collection.handle }} {% endif %}
+    "
+  >
     {% sections 'header-group' %}
     <main>
-        {{ content_for_layout }}
+      {{ content_for_layout }}
     </main>
     {% sections 'footer-group' %}
-    
 
     <script src="{{ 'jquery.js' | asset_url }}"></script>
     {{ content_for_footer }}
