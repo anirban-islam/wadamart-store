@@ -14,7 +14,7 @@
     "header": {
       "type": "header",
       "settings": {
-        "announcement_text": "Free Shipping on Orders Over $1000",
+        "announcement_text": "Free Shipping on Orders Over $500",
         "announcement_bar_link": "http://127.0.0.1:9292/",
         "announcement_bg_color": "#f5f5f5",
         "announcement_text_color": "#333333"
