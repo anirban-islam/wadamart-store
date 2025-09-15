@@ -217,7 +217,7 @@
               id="navbarSupportedContent"
             >
               <ul class="navbar-nav flex flex-wrap flex-row ">
-                {% for link in linklists['header-menu'].links %}
+                {% for link in section.settings.menu.links %}
                   <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem] group">
                     {% if link.links != blank %}
                       <div class="relative group">
@@ -766,8 +766,7 @@
     {
       "type": "link_list",
       "id": "menu",
-      "label": "Menu",
-      "default": "main-menu"
+      "label": "Menu"
     }
   ]
 }
