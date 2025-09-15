@@ -7,28 +7,28 @@
             <div class="cols bb-logo-detail flex max-[47.9375rem]:justify-between">
               <!-- Header Logo Start -->
               <div class="header-logo flex items-center max-[35.9375rem]:justify-center">
-                <a href="{{ routes.root_url}}">
+                <a href="{{ routes.root_url }}">
                   {% if settings.logo_image != blank %}
-                    <img
-                      src="{{ settings.logo_image | img_url: 'original' }}"
-                      alt="logo"
-                      class="light w-[7.8125rem] max-[61.9375rem]:w-[7.1875rem] block"
-                    >
+                    <img src="{{ settings.logo_image | img_url: 'original' }}" alt="logo" class="light w-[7.8125rem] max-[61.9375rem]:w-[7.1875rem] block">
                   {% else %}
                     <h2>{{ shop.name }}</h2>
                   {% endif %}
                 </a>
               </div>
               <!-- Header Logo End -->
-              <a
-                href="javascript:void(0)"
-                class="bb-sidebar-toggle bb-category-toggle hidden max-[61.9375rem]:flex max-[61.9375rem]:items-center max-[61.9375rem]:ml-[1.25rem] max-[61.9375rem]:border-[.0625rem] max-[61.9375rem]:border-solid max-[61.9375rem]:border-[#eee] max-[61.9375rem]:w-[2.5rem] max-[61.9375rem]:h-[2.5rem] max-[61.9375rem]:rounded-[.9375rem] justify-center transition-all duration-[0.3s] ease-in-out font-Poppins text-[.9375rem] text-[#686e7d] font-light leading-[1.75rem] tracking-[.48px]"
-              >
-                <svg
-                  class="svg-icon h-[1.875rem] w-[1.875rem] max-[61.9375rem]:w-[1.375rem] max-[61.9375rem]:h-[1.375rem]"
-                  viewBox="0 0 1024 1024"
-                  version="1.1"
-                  xmlns="http://www.w3.org/2000/svg"
+              <!-- Mobile Category Toggle -->
+              <a href="javascript:void(0)" class="bb-sidebar-toggle bb-category-toggle hidden max-[61.9375rem]:flex max-[61.9375rem]:items-center max-[61.9375rem]:ml-[1.25rem] max-[61.9375rem]:border-[.0625rem] max-[61.9375rem]:border-solid max-[61.9375rem]:border-[#eee] max-[61.9375rem]:w-[2.5rem] max-[61.9375rem]:h-[2.5rem] max-[61.9375rem]:rounded-[.9375rem] justify-center transition-all duration-[0.3s] ease-in-out font-Poppins text-[.9375rem] text-[#686e7d] font-light leading-[1.75rem] tracking-[.48px]" id="bb-mobile-menu-toggle">
+                <svg class="svg-icon h-[1.875rem] w-[1.875rem] max-[61.9375rem]:w-[1.375rem] max-[61.9375rem]:h-[1.375rem]" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                  <path class="fill-[#6c7fd8]" d="M384 928H192a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 608a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V640a32 32 0 0 0-32-32H192zM784 928H640a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v144a32 32 0 0 1-64 0V640a32 32 0 0 0-32-32H640a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h144a32 32 0 0 1 0 64zM384 480H192a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H192zM832 480H640a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM640 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H640z" />
+                </svg>
+              </a>
+            </div>
+            <div class="cols flex justify-center">
+              <!-- Search Bar (unchanged) -->
+              ...
+            </div>
+            <div class="cols bb-icons flex justify-center">
+              <div class="bb-flex-
                 >
                   <path class="fill-[#6c7fd8]" d="M384 928H192a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 608a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V640a32 32 0 0 0-32-32H192zM784 928H640a96 96 0 0 1-96-96V640a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v144a32 32 0 0 1-64 0V640a32 32 0 0 0-32-32H640a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h144a32 32 0 0 1 0 64zM384 480H192a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM192 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H192zM832 480H640a96 96 0 0 1-96-96V192a96 96 0 0 1 96-96h192a96 96 0 0 1 96 96v192a96 96 0 0 1-96 96zM640 160a32 32 0 0 0-32 32v192a32 32 0 0 0 32 32h192a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32H640z" />
                 </svg>
