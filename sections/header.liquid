@@ -214,17 +214,298 @@
               class="bb-main-menu relative flex flex-[auto] justify-start max-[61.9375rem]:hidden"
               id="navbarSupportedContent"
             >
-              <ul class="navbar-nav flex flex-wrap flex-row ">
-                <li class="nav-item flex items-center font-Poppins text-[.9375rem] text-[#686e7d] font-light leading-[1.75rem] tracking-[.48px] mr-[2.1875rem]">
+             
+                
                   {% for link in linklists['header-menu'].links %}
+                    <li class="nav-item flex items-center font-Poppins text-[.9375rem] text-[#686e7d] font-light leading-[1.75rem] tracking-[.48px] mr-[2.1875rem]">
+                         <ul class="navbar-nav flex flex-wrap flex-row ">
                     <a
                       class="nav-link p-[0] font-Poppins leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] tracking-[.48px] block"
                       href="{{ link.url }}"
                     >
                       {{- link.title }}
                     </a>
+                    </li>
                   {% endfor %}
+                
+                <li class="nav-item bb-main-dropdown flex items-center mr-[2.8125rem]">
+                  <a
+                    class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
+                    href="javascript:void(0)"
+                    >Collections</a
+                  >
+                  <ul class="mega-menu min-w-full transition-all duration-[0.3s] ease-in-out mt-[1.5625rem] pl-[1.875rem] absolute top-[2.5rem] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[.0625rem] border-solid border-[#eee] flex flex-col rounded-[.625rem]">
+                    <li class="m-[0] flex items-center">
+                      <ul class="mega-block w-[calc(25%-1.875rem)] mr-[1.875rem] py-[.9375rem]">
+                        <li class="menu_title border-b-[.0625rem] border-solid border-[#eee] mb-[.625rem] pb-[.3125rem] flex items-center leading-[1.75rem]">
+                          <a
+                            href="javascript:void(0)"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins h-[auto] text-[#6c7fd8] text-[.9375rem] font-medium tracking-[.48px] block py-[.625rem] leading-[1.375rem] capitalize"
+                            >Classic</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-left-sidebar-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Left sidebar 3 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-left-sidebar-col-4.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Left sidebar 4 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-right-sidebar-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Right sidebar 3 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-right-sidebar-col-4.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Right sidebar 4 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-full-width.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Full width 4 column</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="mega-block w-[calc(25%-1.875rem)] mr-[1.875rem] py-[.9375rem]">
+                        <li class="menu_title border-b-[.0625rem] border-solid border-[#eee] mb-[.625rem] pb-[.3125rem] flex items-center leading-[1.75rem]">
+                          <a
+                            href="javascript:void(0)"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins h-[auto] text-[#6c7fd8] text-[.9375rem] font-medium tracking-[.48px] block py-[.625rem] leading-[1.375rem] capitalize"
+                            >Banner</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-left-sidebar-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >left sidebar 3 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-left-sidebar-col-4.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >left sidebar 4 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-right-sidebar-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >right sidebar 3 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-right-sidebar-col-4.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >right sidebar 4 column</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-full-width.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Full width 4 column</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="mega-block w-[calc(25%-1.875rem)] mr-[1.875rem] py-[.9375rem]">
+                        <li class="menu_title border-b-[.0625rem] border-solid border-[#eee] mb-[.625rem] pb-[.3125rem] flex items-center leading-[1.75rem]">
+                          <a
+                            href="javascript:void(0)"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins h-[auto] text-[#6c7fd8] text-[.9375rem] font-medium tracking-[.48px] block py-[.625rem] leading-[1.375rem] capitalize"
+                            >Columns</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-full-width-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >3 Columns full width</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-full-width-col-4.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >4 Columns full width</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-full-width-col-5.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >5 Columns full width</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-full-width-col-6.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >6 Columns full width</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-banner-full-width-col-3.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Banner 3 Columns</a
+                          >
+                        </li>
+                      </ul>
+                      <ul class="mega-block w-[calc(25%-1.875rem)] mr-[1.875rem] py-[.9375rem]">
+                        <li class="menu_title border-b-[.0625rem] border-solid border-[#eee] mb-[.625rem] pb-[.3125rem] flex items-center leading-[1.75rem]">
+                          <a
+                            href="javascript:void(0)"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins h-[auto] text-[#6c7fd8] text-[.9375rem] font-medium tracking-[.48px] block py-[.625rem] leading-[1.375rem] capitalize"
+                            >List</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-list-left-sidebar.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Shop left sidebar</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-list-right-sidebar.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Shop right sidebar</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-list-banner-left-sidebar.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Banner left sidebar</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-list-banner-right-sidebar.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Banner right sidebar</a
+                          >
+                        </li>
+                        <li class="flex items-center leading-[1.75rem]">
+                          <a
+                            href="shop-list-full-col-2.html"
+                            class="transition-all duration-[0.3s] ease-in-out font-Poppins py-[.625rem] leading-[1.375rem] text-[.875rem] font-normal tracking-[.48px] text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            >Full width 2 columns</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
 
+                <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
+                  <a
+                    class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
+                    href="javascript:void(0)"
+                    >Shop</a
+                  >
+                  <ul class="bb-dropdown-menu min-w-[12.8125rem] p-[.625rem] transition-all duration-[0.3s] ease-in-out mt-[1.5625rem] absolute top-[2.5rem] z-[16] text-left opacity-[0] invisible left-[0] right-[auto] bg-[#fff] border-[.0625rem] border-solid border-[#eee] flex flex-col rounded-[.625rem]">
+                    <li class="bb-mega-dropdown m-[0] py-[.3125rem] px-[.9375rem] relative flex items-center">
+                      <a
+                        class="bb-mega-item transition-all duration-[0.3s] ease-in-out font-Poppins py-[.3125rem] leading-[1.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize tracking-[.48px]"
+                        href="javascript:void(0)"
+                        >Product page</a
+                      >
+                      <ul class="bb-mega-menu transition-all duration-[0.3s] ease-in-out min-w-[13.75rem] p-[.625rem] mt-[1.5625rem] absolute top-[-1.25rem] left-[12.0625rem] z-[16] text-left opacity-[0] invisible right-[auto] bg-[#fff] border-[.0625rem] border-solid border-[#eee] flex flex-col rounded-[.625rem]">
+                        <li class="m-[0] py-[.3125rem] px-[.9375rem] flex items-center">
+                          <a
+                            class="dropdown-item transition-all duration-[0.3s] ease-in-out py-[.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            href="product-left-sidebar.html"
+                            >Product left sidebar</a
+                          >
+                        </li>
+                        <li class="m-[0] py-[.3125rem] px-[.9375rem] flex items-center">
+                          <a
+                            class="dropdown-item transition-all duration-[0.3s] ease-in-out py-[.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            href="product-right-sidebar.html"
+                            >Product right sidebar</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="bb-mega-dropdown m-[0] py-[.3125rem] px-[.9375rem] relative flex items-center">
+                      <a
+                        class="bb-mega-item transition-all duration-[0.3s] ease-in-out font-Poppins py-[.3125rem] leading-[1.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize tracking-[.48px]"
+                        href="javascript:void(0)"
+                        >Product Accordion</a
+                      >
+                      <ul class="bb-mega-menu transition-all duration-[0.3s] ease-in-out min-w-[13.75rem] p-[.625rem] mt-[1.5625rem] absolute top-[-1.25rem] left-[12.0625rem] z-[16] text-left opacity-[0] invisible right-[auto] bg-[#fff] border-[.0625rem] border-solid border-[#eee] flex flex-col rounded-[.625rem]">
+                        <li class="m-[0] py-[.3125rem] px-[.9375rem] flex items-center">
+                          <a
+                            class="dropdown-item transition-all duration-[0.3s] ease-in-out py-[.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            href="product-accordion-left-sidebar.html"
+                            >left sidebar</a
+                          >
+                        </li>
+                        <li class="m-[0] py-[.3125rem] px-[.9375rem] flex items-center">
+                          <a
+                            class="dropdown-item transition-all duration-[0.3s] ease-in-out py-[.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize"
+                            href="product-accordion-right-sidebar.html"
+                            >right sidebar</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="m-[0] py-[.3125rem] px-[.9375rem] relative flex items-center">
+                      <a
+                        href="product-full-width.html"
+                        class="font-Poppins transition-all duration-[0.3s] ease-in-out py-[.3125rem] leading-[1.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize tracking-[.48px]"
+                        >Product full width</a
+                      >
+                    </li>
+                    <li class="m-[0] py-[.3125rem] px-[.9375rem] relative flex items-center">
+                      <a
+                        href="product-accordion-full-width.html"
+                        class="font-Poppins transition-all duration-[0.3s] ease-in-out py-[.3125rem] leading-[1.375rem] text-[.875rem] font-normal text-[#686e7d] hover:text-[#6c7fd8] capitalize tracking-[.48px]"
+                        >accordion full width</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
+                  <a
+                    class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
+                    href="about-us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
+                  <a
+                    class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
+                    href="contact-us.html"
+                    >Contact</a
+                  >
+                </li>
+                <li class="nav-item bb-dropdown flex items-center relative mr-[2.8125rem]">
+                  <a
+                    class="nav-link bb-dropdown-item font-Poppins relative p-[0] leading-[1.75rem] text-[.9375rem] font-medium text-[#3d4750] block tracking-[.48px]"
+                    href="blog.html"
+                    >Blog</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="bb-dropdown-menu flex max-[61.9375rem]:hidden">
