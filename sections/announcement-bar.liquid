@@ -25,6 +25,39 @@
               >
             </div>
             <div class="cols px-[.75rem]">
+              <div class="custom-dropdown relative z-[5] group">
+              <a
+                class="bb-dropdown-toggle transition-all duration-300 ease-in-out font-Poppins font-light text-[.875rem] relative pr-4 leading-7 tracking-[.48px] cursor-pointer flex items-center"
+                href="#"
+                style="color: {{ section.settings.text_color }}"
+                onclick="event.preventDefault(); this.parentElement.classList.toggle('open');"
+              >
+                {{ cart.currency.iso_code | default: 'USD' }} 
+                <svg class="ml-1 w-3 h-3 inline-block transition-transform duration-300 group-[.open]:rotate-180" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+              </a>
+              <ul
+                class="dropdown transition-all duration-300 ease-in-out min-w-[9.375rem] py-2 px-2 mt-6 absolute z-20 text-left opacity-0 invisible left-0 right-auto block border border-solid border-[#eee] rounded-lg group-hover:opacity-100 group-hover:visible group-open:opacity-100 group-open:visible bg-white shadow-lg"
+                style="background: {{ section.settings.background_color }}"
+              >
+                {% assign currencies = shop.enabled_currencies | default: "USD,EUR,GBP" | split: ',' %}
+                {% for currency in currencies %}
+                <li
+                  class="font-Poppins text-[.9375rem] font-light leading-7 tracking-[.48px] hover:bg-[#f5f5f5] rounded transition"
+                  style="color: {{ section.settings.text_color }}"
+                >
+                  <a
+                  href="?currency={{ currency | strip }}"
+                  class="transition-all duration-300 ease-in-out text-[.8125rem] block py-3 px-2 leading-7 tracking-[.48px] hover:text-[#6c7fd8] font-normal font-Poppins"
+                  style="color: {{ section.settings.text_color }};"
+                  >
+                  {{ currency | strip }}
+                  {% if currency == cart.currency.iso_code %} <span class="ml-1 text-xs text-[#6c7fd8]">(Selected)</span>{% endif %}
+                  </a>
+                </li>
+                {% endfor %}
+              </ul>
+              </div>
+            </div>
                 <div class="custom-dropdown relative z-[5] group">
                 <a
                   class="bb-dropdown-toggle transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[.875rem]  relative pr-[.9375rem]  leading-[1.75rem] tracking-[.48px] cursor-pointer flex items-center"
