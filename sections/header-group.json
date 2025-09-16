@@ -13,7 +13,12 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "settings": {}
+      "settings": {
+        "announcement_text": "Free shipping on orders over $50",
+        "announcement-link": "",
+        "background_color": "#2e8ade",
+        "text_color": "#ffffff"
+      }
     },
     "logo-header": {
       "type": "logo-header",
