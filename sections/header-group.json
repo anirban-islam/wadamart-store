@@ -20,6 +20,15 @@
         "text_color": "#ffffff"
       }
     },
+    "announcement_bar_BU6bmh": {
+      "type": "announcement-bar",
+      "settings": {
+        "announcement_text": "Free shipping on orders over $500",
+        "announcement-link": "shopify://collections",
+        "background_color": "#121212",
+        "text_color": "#ffffff"
+      }
+    },
     "logo-header": {
       "type": "logo-header",
       "settings": {}
@@ -34,6 +43,7 @@
   "order": [
     "announcement-bar",
     "logo-header",
+    "announcement_bar_BU6bmh",
     "menu-header"
   ]
 }
