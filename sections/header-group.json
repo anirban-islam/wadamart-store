@@ -16,7 +16,7 @@
       "settings": {
         "announcement_text": "Free shipping on orders over $500",
         "announcement-link": "shopify://collections",
-        "background_color": "#9f9f9f",
+        "background_color": "#ed5e5e",
         "text_color": "#000000"
       }
     },
