@@ -24,15 +24,6 @@
       "type": "logo-header",
       "settings": {}
     },
-    "announcement_bar_BU6bmh": {
-      "type": "announcement-bar",
-      "settings": {
-        "announcement_text": "Clam Your Offer Fast",
-        "announcement-link": "shopify://collections",
-        "background_color": "#121212",
-        "text_color": "#ffffff"
-      }
-    },
     "menu-header": {
       "type": "menu-header",
       "settings": {
@@ -43,7 +34,6 @@
   "order": [
     "announcement-bar",
     "logo-header",
-    "announcement_bar_BU6bmh",
     "menu-header"
   ]
 }
