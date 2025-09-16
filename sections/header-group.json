@@ -15,7 +15,7 @@
       "type": "announcement-bar",
       "settings": {
         "announcement_text": "Free shipping on orders over $500",
-        "announcement-link": "",
+        "announcement-link": "shopify://collections",
         "background_color": "#077be7",
         "text_color": "#de2424"
       }
