@@ -7,7 +7,8 @@
             <a
               href="shop-left-sidebar-col-3.html"
               class="transition-all duration-[0.3s] ease-in-out font-Poppins font-light text-[.875rem] text-[#fff] leading-[1.75rem] tracking-[.48px]"
-              >Flat 50% Off On Grocery Shop.</a
+            >
+              {{- settings.announcement_text }}.</a
             >
           </div>
           <div class="col-right-bar flex">
@@ -54,6 +55,30 @@
 {
   "name": "Announcement Bar",
   "class": "announcement-bar",
-  "settings": []
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement Text",
+      "default": "Free shipping on orders over $50"
+    },
+    {
+      "type": "url",
+      "id": "announcement-link",
+      "label": "Announcement Link"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#3d4750"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    }
+  ]
 }
 {% endschema %}
